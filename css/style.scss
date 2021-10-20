@@ -336,9 +336,22 @@ button:hover {
     height: 50%;
     width: 70%;
     .swiper-wrapper {
+      .ingredients_slide_1 {
+        background-image: url(/images/ing-1.jpeg);
+      }
+
+      .ingredients_slide_2 {
+        background-image: url(/images/ing-2.jpeg);
+      }
+
+      .ingredients_slide_3 {
+        background-image: url(/images/ing-3.jpeg);
+      }
+
       .swiper-slide {
         background-color: khaki;
         border-radius: 12px;
+        background-size: cover;
       }
     }
   }
@@ -520,7 +533,7 @@ button:hover {
 }
 
 .img-component {
-  background: url(/images/quiz-en-gb.png);
+  background: url(/images/loc-img.jpeg);
   background-size: cover;
   // position: relative;
   width: 70%;

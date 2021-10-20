@@ -393,9 +393,22 @@ button:hover {
   width: 70%;
 }
 
+.ingredients-carousel .swiper .swiper-wrapper .ingredients_slide_1 {
+  background-image: url(/images/ing-1.jpeg);
+}
+
+.ingredients-carousel .swiper .swiper-wrapper .ingredients_slide_2 {
+  background-image: url(/images/ing-2.jpeg);
+}
+
+.ingredients-carousel .swiper .swiper-wrapper .ingredients_slide_3 {
+  background-image: url(/images/ing-3.jpeg);
+}
+
 .ingredients-carousel .swiper .swiper-wrapper .swiper-slide {
   background-color: khaki;
   border-radius: 12px;
+  background-size: cover;
 }
 
 .ingredients-carousel .ingredients-caption {
@@ -611,7 +624,7 @@ button:hover {
 }
 
 .img-component {
-  background: url(/images/quiz-en-gb.png);
+  background: url(/images/loc-img.jpeg);
   background-size: cover;
   width: 70%;
   max-width: 22rem;
