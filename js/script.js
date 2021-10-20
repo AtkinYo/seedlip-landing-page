@@ -1,9 +1,10 @@
-let mobileMenuBtn = $('.hamburger-menu-btn');
-let navCartBtn = $('.cart-btn');
-
 /* Hamburger Menu Toggle */
+const mobileMenuBtn = $('.hamburger-menu-btn');
+const navCartBtn = $('.cart-btn');
 
 function mobileMenu() {
+  const scrollPosition = 38;
+
   const mobileNav = $('.mobile-navbar');
 
   if (mobileNav) {
@@ -14,10 +15,10 @@ function mobileMenu() {
 
 /* Navbar Scroll Animation */
 window.addEventListener('scroll', () => {
-  let scrollPosition = 38;
+  const scrollPosition = 38;
 
-  let navLogo = $('.nav-logo');
-  let mobileNavbarBg = $('nav');
+  const navLogo = $('.nav-logo');
+  const mobileNavbarBg = $('nav');
 
   if (window.scrollY < scrollPosition) {
     navLogo.removeClass('nav-logo-reveal');
@@ -31,3 +32,54 @@ window.addEventListener('scroll', () => {
     navCartBtn.addClass('mobile-nav-color');
   }
 });
+
+/* Swiper JS Plugin */
+
+const productSwiper = new Swiper('.product__container__swiper', {
+  // Optional parameters
+  loop: true,
+});
+
+const ingredientSwiper = new Swiper('.ingredients__container__swiper', {
+  grabCursor: true,
+  effect: 'creative',
+  loop: true,
+
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: ['-120%', 0, -500],
+    },
+    next: {
+      shadow: true,
+      translate: ['120%', 0, -500],
+    },
+  },
+});
+
+const spanBtn = $('.ingredients-btn-span');
+
+const hover = () => {
+  spanBtn.addClass('grow');
+};
+
+const leave = () => {
+  spanBtn.removeClass('grow');
+};
+
+new Splide('.splide', {
+  perPage: 3,
+  rewind: true,
+  width: 1000,
+
+  breakpoints: {
+    768: {
+      perPage: 2,
+      width: 768,
+    },
+    525: {
+      perPage: 1,
+      width: 330,
+    },
+  },
+}).mount();

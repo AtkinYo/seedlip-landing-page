@@ -10,10 +10,15 @@
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 
+    <!-- Navbar -->
     <header>
         <nav>
             <div class="nav-menu-btn">
@@ -51,6 +56,7 @@
         </nav>
     </header>
 
+    <!-- Hero Container -->
     <section class="section-a">
         <div class="hero-container">
 
@@ -61,13 +67,237 @@
 
                 <div class="hero-title">
                     <p class="hero-title-title">It All Begins W/ the</p>
-                    <p class="hero-title-subtitle">Original Distilled Non-Alchoholic Spirits</p>
+                    <p class="hero-title-subtitle">Original Distilled Non-Alcoholic Spirits</p>
                 </div>
             </div>
             <div class="overlay"></div>
         </div>
     </section>
 
+    <!-- Product Container -->
+    <section class="section-b">
+        <div class="product-carousel">
+            <!-- Slider main container -->
+            <div class="swiper product__container__swiper">
+                <div class="overlay-2">
+                    <p>The Products</p>
+                    <p>Meet Our Three Unique Flavours</p>
+                </div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide-1 product_slide_1"></div>
+                <div class="swiper-slide slide-2 product_slide_2"></div>
+                <div class="swiper-slide slide-3 product_slide_3"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Container -->
+    <section class="section-c">
+        <div class="ingredients-carousel">
+
+            <div class="mobile-text-area">
+                <div class="lg-ingredients-header">
+                    <p>The Taste</p>
+                    <h3>Explore Our Quality Sourced Ingredients</h3>
+                </div>
+
+                <div class="lg-ingredients-caption">
+                    <p>Seedlip Spice 94 is a warm, aromatic blend of Allspice & Cardamom with fresh citrus top notes to balance the long bitter finish.</p>
+                </div>
+
+                <button type="submit" class="lg-ingredients-btn" onmouseover="hover()" onmouseout="leave()">
+
+                    <span class="ingredients-btn-span"></span>
+                    <p>Buy Now</p>
+                    
+                </button>
+            </div>
+
+            <div class="ingredients-header">
+                <p>The Taste</p>
+                <h3>Explore Our Quality Sourced Ingredients</h3>
+            </div>
+
+            <div class="swiper ingredients__container__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+            </div>
+
+            <div class="ingredients-caption">
+                <p>Seedlip Spice 94 is a warm, aromatic blend of Allspice & Cardamom with fresh citrus top notes to balance the long bitter finish.</p>
+            </div>
+
+            <button type="submit" class="ingredients-btn" onmouseover="hover()" onmouseout="leave()">
+
+                <span class="ingredients-btn-span"></span>
+                <p>Buy Now</p>
+                
+            </button>
+        </div>
+    </section>
+
+    <!-- Story Container -->
+    <section class="section-d">
+        <div class="story-container">
+
+            <div class="story-text">
+                <p>Our Story</p>
+                <h2>Discover The Roots Of Seedlip</h2>
+                <p>Wander around, explore, & be immersed into our legacy & heritage.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+
+            <div class="overlay">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Container -->
+    <section class="section-e">
+        <div class="recipes-container">
+
+            <div class="recipes-header">
+                <p>Cocktail Recipes</p>
+                <h3>Tend to Your Own Bar</h3>
+                <button type="submit" class="lg-ingredients-btn" onmouseover="hover()" onmouseout="leave()">
+                    <span class="ingredients-btn-span"></span>
+                    <p>Discover Now</p>
+                </button>
+            </div>
+
+
+            <div class="splide recipes-carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide recipe-slider-1"></li>
+                        <li class="splide__slide recipe-slider-2"></li>
+                        <li class="splide__slide recipe-slider-3"></li>
+                        <li class="splide__slide recipe-slider-4"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button type="submit" class="ingredients-btn" onmouseover="hover()" onmouseout="leave()">
+                <span class="ingredients-btn-span"></span>
+                <p>Discover Now</p>
+            </button>
+        </div>
+    </section>
+
+    <!-- Quiz Container -->
+    <section class="section-f">
+        <div class="quiz-container container-component">
+
+            <div class="quiz-header header-component">
+                <p>Flavour Match</p>
+                <h3>Haven't Tried Seedlip Before?</h3>
+
+                <div class="lg-quiz-caption">
+                    <p>We have three sophisticated & delicious non-alcholic spirits: Seedlip Spice 94, Seedlip Grove 42 & Seedlip Garden 108. Take our quiz to discover the Seedlip Spirit most suited to you & your palate.</p>
+                </div>
+
+                <button type="submit" class="lg-component-btn" onmouseover="hover()" onmouseout="leave()">
+                    <span class="ingredients-btn-span"></span>
+                    <p>Take Quiz</p>
+                </button>
+            </div>
+
+            <div class="img-component"></div>
+
+            <div class="quiz-caption caption-component">
+                <p>We have three sophisticated & delicious non-alcholic spirits: Seedlip Spice 94, Seedlip Grove 42 & Seedlip Garden 108. Take our quiz to discover the Seedlip Spirit most suited to you & your palate.</p>
+            </div>
+
+            <button type="submit" class="component-btn" onmouseover="hover()" onmouseout="leave()">
+                <span class="ingredients-btn-span"></span>
+                <p>Take Quiz</p>
+            </button>
+        </div>
+    </section>
+
+    <!-- Location Container -->
+    <section class="section-g">
+        <div class="stocklist-container container-component">
+
+            <div class="stocklist-header header-component">
+                <p>Stocklist</p>
+                <h3>Located Seedlip</h3>
+
+                <div class="lg-stocklist-caption">
+                    <p>Find a local bar or bartender concocting Seedlip cocktails or discover a retailer to bring the bar home.</p>
+                </div>
+
+                <button type="submit" class="lg-component-btn" onmouseover="hover()" onmouseout="leave()">
+                    <span class="ingredients-btn-span"></span>
+                    <p>Search Now</p>
+                </button>
+            </div>
+
+            <div class="img-component"></div>
+
+            <div class="stocklist-caption caption-component">
+                <p>Find a local bar or bartender concocting Seedlip cocktails or discover a retailer to bring the bar home.</p>
+            </div>
+
+            <button type="submit" class="component-btn" onmouseover="hover()" onmouseout="leave()">
+                <span class="ingredients-btn-span"></span>
+                <p>Search Now</p>
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="mobile-footer-container">
+
+                <div class="left">
+                    <div class="footer-header">
+                        <p>Newsletter</p>
+                        <h3>Stay In The Seedlip Know</h3>
+                    </div>
+    
+                    <form action="post">
+                        <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Email">
+                        <label for="newsletter-email"></label>
+                    </form>
+
+                    <div class="mobile-social-media">
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                </div>
+
+
+                <img src="/images/header-logo.svg">
+
+
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Conditions Of Use</a></li>
+                    <li><a href="#">Privacy Settings</a></li>
+                    <li><a href="#">Purchase Age for Alcohol: Drink Responsibly.</a></li>
+                    <li><a href="#">Cookie Notice</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script src="/js/script.js"></script>
 </body>
 
