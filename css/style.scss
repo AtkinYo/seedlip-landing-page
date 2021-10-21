@@ -532,8 +532,15 @@ button:hover {
   }
 }
 
+#loc-img-component {
+  background-image: url(/images/loc-img.jpeg);
+}
+
+.quiz-img-component {
+  background-image: url(/images/quiz-en-gb.png);
+}
+
 .img-component {
-  background: url(/images/loc-img.jpeg);
   background-size: cover;
   // position: relative;
   width: 70%;
@@ -811,9 +818,6 @@ button:hover {
   }
 
   .img-component {
-    background: url(/images/quiz-en-gb.png);
-    background-size: cover;
-    // position: relative;
     width: 70%;
     max-width: 22rem;
     aspect-ratio: 4/4;
